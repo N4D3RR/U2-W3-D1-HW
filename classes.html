@@ -6,6 +6,36 @@
     <title>Document</title>
   </head>
   <body>
+    <h1>Pets</h1>
+
+    <form id="petForm">
+      <label for="petName">Nome animale:</label>
+      <input type="text" id="petName" required /><br />
+
+      <label for="ownerName">Nome padrone:</label>
+      <input type="text" id="ownerName" required /><br />
+
+      <label for="species">Specie:</label>
+      <select id="species" required>
+        <option value="">Seleziona</option>
+        <option value="cane">Cane</option>
+        <option value="gatto">Gatto</option>
+        <option value="coniglio">Coniglio</option>
+        <option value="altro">Altro</option></select
+      ><br />
+
+      <label for="breed">Razza:</label>
+      <input type="text" id="breed" required /><br />
+
+      <button type="submit">Aggiungi Animale</button>
+    </form>
+    <div>
+      <h2>Lista Animali</h2>
+      <ul id="petList"></ul>
+
+      <h2>Animali con lo stesso padrone</h2>
+      <ul id="ownerResults"></ul>
+    </div>
     <script src="/classes.js"></script>
   </body>
 </html>
